@@ -9,7 +9,7 @@ from ts3 import Events
 
 watchDog = None  # type: WatchDog
 watchDogStopper = threading.Event()
-bot: Bot = None
+bot = None
 autoStart = True
 
 
