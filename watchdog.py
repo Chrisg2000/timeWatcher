@@ -34,7 +34,7 @@ class WatchDog(Thread):
         Thread.__init__(self)
         self.stopped = event
         self.ts3conn = ts3conn
-        self.users: Dict[str, UserModel] = {}
+        self.users = {}  # type: Dict[str, UserModel]
         self._populate_users()
 
     def run(self):
